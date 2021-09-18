@@ -1,5 +1,6 @@
 const express = require('express')
 const Refugee = require('../models/refugee')
+const sequelize = require('sequelize-cockroachdb')
 //const auth = require('../middleware/auth')
 const router = new express.Router()
 
@@ -19,7 +20,8 @@ router.post('/refugeesignup', async (req,res) =>{
 
 // Refugee Read Endpoint
 router.get("/refugees", async (req,res)=>{
-    console.log(req)
+    const refugee = await Refugee.findAll()
+    res.json((refugee))
 })
 
 
