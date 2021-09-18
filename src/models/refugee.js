@@ -1,7 +1,7 @@
 const Sequelize = require("sequelize-cockroachdb");
-
+const cockroach = require('./../db/cockroach')
 // Define the Account model for the "accounts" table.
-const Refugee = sequelize.define("refugee", {
+const Refugee = cockroach.define("refugee", {
     id: {
       type: Sequelize.INTEGER,
       primaryKey: true,
@@ -31,11 +31,17 @@ const addRows =  () => {
     Refugee.bulkCreate([
       {
         id: 1,
-        balance: 100,
+        name: "Sid",
+        email: "siddharthpathak@uvic.ca",
+        password: "test",
+        nationality: "India"
       },
       {
         id: 2,
-        balance: 20,
+        name: "Test",
+        email: "TEST@htn.ca",
+        password: "test",
+        nationality: "TEST"
       },
     ]);
 }
