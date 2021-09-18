@@ -21,6 +21,7 @@ var sequelize = new Sequelize({
   logging: false,
 });
 
+console.log("Connection Successful")
 /* Below is a separate account table to test the connection */
 
 // Define the Account model for the "accounts" table.
@@ -39,15 +40,17 @@ Account.sync({
   force: true,
 })
   .then(function () {
+
+    
     // Insert two rows into the "accounts" table.
     return Account.bulkCreate([
       {
         id: 1,
-        balance: 1000,
+        balance: 100,
       },
       {
         id: 2,
-        balance: 250,
+        balance: 20,
       },
     ]);
   })

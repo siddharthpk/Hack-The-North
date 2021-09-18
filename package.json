@@ -1,0 +1,27 @@
+{
+  "name": "hack-the-north",
+  "version": "1.0.0",
+  "description": "Hack the North 2021 Project",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "sequelize": "^6.6.5",
+    "sequelize-cockroachdb": "^6.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node db/db.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siddharthpk/Hack-The-North.git"
+  },
+  "author": "Sid",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/siddharthpk/Hack-The-North/issues"
+  },
+  "homepage": "https://github.com/siddharthpk/Hack-The-North#readme"
+}
