@@ -2,10 +2,9 @@
 const express = require('express')
 const cockroach = require('./src/db/cockroach')
 const refugeeRouter = require('./src/routers/refugee')
-// const taskRouter = require('./router/task')
+const helperRouter = require('./src/routers/helper')
 require('./src/db/cockroach') // --> DO NOT DELETE
 
-const Refugee = require('./src/models/refugee')
 
 // Starting express server
 const app = express()
@@ -24,23 +23,12 @@ app.use(express.json())
 // Refugee Router
 app.use(refugeeRouter)
 
+app.use(helperRouter)
+
 // Landing page for API
 app.get("/", (req, res) => {
     res.json({ message: "Welcome to our HTN application." });
   });
-
-
-
-
-// Helper Sign up Endpoint
-app.post("/helpersignup", (req,res)=>{
-
-})
-
-// Helper Read Endpoint
-app.get("/helpers", (req,res)=>{
-
-})
 
 // Create Posts Endpoint
 app.post("/newpost", (req,res)=>{
