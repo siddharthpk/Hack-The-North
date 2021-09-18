@@ -1,0 +1,30 @@
+//Importing all files and modules
+const express = require('express')
+// const userRouter = require('./router/user')
+// const taskRouter = require('./router/task')
+require('./src/db/cockroach') // --> DO NOT DELETE
+
+// Starting express server
+const app = express()
+const port = process.env.PORT || 3000
+
+// Express Middleware for token authentication step
+// app.use((req, res, next)=>{
+//     //console.log(req.method, req.path)
+//     //next()
+//     res.status(503).send('Under Maintenance')
+// })
+
+// Accepting json
+app.use(express.json())
+
+// // User Router
+// app.use(userRouter)
+
+// // Task router
+// app.use(taskRouter)
+
+// Start server listening
+app.listen(port, ()=>{
+    console.log('Server is running on port ' + port)
+})
