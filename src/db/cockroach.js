@@ -4,7 +4,7 @@ const fs = require('fs');
 const { constants } = require("buffer");
 
 // Connect to CockroachDB through Sequelize.
-const connection = new Sequelize({
+const cockroach = new Sequelize({
   dialect: "postgres",
   username: "nick",
   password: "hackthenorth",
@@ -22,7 +22,7 @@ const connection = new Sequelize({
   logging: false,
 });
 
-connection
+cockroach
   .authenticate()
   .then(()=>{
     console.log("Database Connected")
@@ -31,5 +31,5 @@ connection
     console.error("Error: Unable to connect to database", err)
   })
 
-
+module.exports = cockroach
 
