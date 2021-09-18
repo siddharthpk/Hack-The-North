@@ -1,11 +1,12 @@
 import './Header.css';
 //import logo from '../../assets/logo.png';
+import Button from './Button';
 
 const Header = (props) => {
     return(
         <header className="header">
             <h1>Refugee Response</h1>
-            <button>Log In</button>
+            <Button>Log In</Button>
         </header>
     )
 }
