@@ -24,21 +24,13 @@ app.use(express.json())
 // Refugee Router
 app.use(refugeeRouter)
 
-// Create table(s) with sync()
-cockroach.sync().then(()=>{
-    console.log("Database Synced!")
-})
-
 // Landing page for API
 app.get("/", (req, res) => {
     res.json({ message: "Welcome to our HTN application." });
   });
 
 
-// Refugee Read Endpoint
-app.get("/refugees", (req,res)=>{
 
-})
 
 // Helper Sign up Endpoint
 app.post("/helpersignup", (req,res)=>{

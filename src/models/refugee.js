@@ -1,7 +1,7 @@
 const Sequelize = require("sequelize-cockroachdb");
 const cockroach = require('./../db/cockroach')
-// Define the Account model for the "accounts" table.
-const Refugee = cockroach.define("refugee", {
+// Define the Account model for the "refugees" table.
+const Refugee = cockroach.define("refugee-data", {
     id: {
       type: Sequelize.INTEGER,
       primaryKey: true,

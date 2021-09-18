@@ -6,7 +6,7 @@ const router = new express.Router()
 // Refugee Signup
 router.post('/refugeesignup', async (req,res) =>{
     const refugee = new Refugee(req.body)
-   
+    console.log(req.body)
     try{
         await refugee.save()
         //const token = await user.genAuthToken()
@@ -16,5 +16,11 @@ router.post('/refugeesignup', async (req,res) =>{
     }
     
 })
+
+// Refugee Read Endpoint
+router.get("/refugees", async (req,res)=>{
+    console.log(req)
+})
+
 
 module.exports = router

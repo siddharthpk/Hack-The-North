@@ -31,5 +31,8 @@ cockroach
     console.error("Error: Unable to connect to database", err)
   })
 
+cockroach.sync().then(()=>{
+  console.log("Database Synced!")
+})
 module.exports = cockroach
 
