@@ -1,6 +1,7 @@
 //Importing all files and modules
 const express = require('express')
-// const userRouter = require('./router/user')
+const cockroach = require('./src/db/cockroach')
+const refugeeRouter = require('./src/routers/refugee')
 // const taskRouter = require('./router/task')
 require('./src/db/cockroach') // --> DO NOT DELETE
 
@@ -20,18 +21,19 @@ const port = process.env.PORT || 3000
 // Accepting json
 app.use(express.json())
 
-// // User Router
-// app.use(userRouter)
+// Refugee Router
+app.use(refugeeRouter)
+
+// Create table(s) with sync()
+cockroach.sync().then(()=>{
+    console.log("Database Synced!")
+})
 
 // Landing page for API
 app.get("/", (req, res) => {
     res.json({ message: "Welcome to our HTN application." });
   });
 
-// Refugee Sign up Endpoint
-app.post("/refugeesignup", (req,res)=>{
-
-})
 
 // Refugee Read Endpoint
 app.get("/refugees", (req,res)=>{
