@@ -14,7 +14,7 @@ const Post = ({ post }) => {
                 <Typography variant={"body2"}>{moment(post.createdAt).fromNow()}</Typography>
             </div>
             <div className={classes.details}>
-                <Typography variant="body2" color="textSecondary" component="h2">{post.email}</Typography>
+                <Typography variant="body2" color="textSecondary" component="h2">{post.creator_email}</Typography>
             </div>
             <Typography className={classes.title} gutterBottom variant="h5" component="h2">{post.title}</Typography>
             <CardContent>

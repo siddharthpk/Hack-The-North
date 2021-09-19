@@ -5,22 +5,28 @@ const Refugee = require('./refugee')
 // Define the Account model for the "refugees" table.
 const Posts = cockroach.define("posts-data", {
     id: {
-      type: Sequelize.INTEGER,
+      type: Sequelize.UUID,
       primaryKey: true,
+      defaultValue: Sequelize.UUIDV4,
+      allowNull:false
+    },
+    creator: {
+      type: Sequelize.TEXT,
+      defaultValue: null
     },
     title: {
       type: Sequelize.STRING,
     },
-    description: {
+    creator_email: {
+      type: Sequelize.TEXT,
+      defaultValue: null
+    },
+    message: {
       type: Sequelize.TEXT
     },
-    tags: {
-      type: Sequelize.ARRAY(Sequelize.TEXT),
-      defaultValue: null
-    }
 });
 
 // Adding foreign key constraint
-Posts.belongsTo(Refugee)
+//Posts.belongsTo(Refugee)
 
 module.exports = Posts
