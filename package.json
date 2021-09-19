@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Hack the North 2021 Project",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "react-router-dom": "^5.3.0"
+  },
   "devDependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
