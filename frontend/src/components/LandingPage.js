@@ -4,7 +4,7 @@ const LandingPage = () => {
   return (
     <body className="body" >
       <div className="main">
-        <h1>Refugee Response</h1>
+        <h1>Welcome!</h1>
       </div>
       <div className="main">
         <button className="button" >I'm looking to help</button>
