@@ -14,14 +14,14 @@ code {
 
 .center{
   margin-right: 100px;
-
+  padding-left: 150px;
 }
 
 .header img {
   float: left;
-  position:fixed; 
-	height: auto;
-  width: 11.25%; 
+  position: flex; 
+	height: 80px;
+  width: 150px; 
   border-radius: none;
   box-sizing: border-box;
   border-style: none;

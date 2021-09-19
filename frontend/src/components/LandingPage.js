@@ -1,14 +1,16 @@
 import './LandingPage.css';
+import Button from '@material-ui/core/Button';
+import { Link } from 'react-router-dom';
 
 const LandingPage = () => {
   return (
     <body className="body" >
       <div className="main">
-        <h1>Welcome!</h1>
+        <h1>Welcome, We're Glad You're Here!</h1>
       </div>
       <div className="main">
-        <button className="button" >I'm looking to help</button>
-        <button className="button">I'm seeking help</button>
+        <Button className="button" component={Link} to ="/login">I'm looking to help</Button>
+        <Button className="button" component={Link} to ="/login">I'm seeking help</Button>
       </div>
     </body>
   );
