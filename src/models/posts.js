@@ -15,7 +15,8 @@ const Posts = cockroach.define("posts-data", {
       type: Sequelize.TEXT
     },
     tags: {
-      type: Sequelize.ARRAY
+      type: Sequelize.ARRAY(Sequelize.TEXT),
+      defaultValue: null
     }
 });
 
