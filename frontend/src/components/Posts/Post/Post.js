@@ -7,7 +7,7 @@ const Post = ({ post }) => {
     const classes = useStyles();
 
     return (
-        <Card className={classes.card}>
+        <Card className={`posts-cont ${classes.card}`}>
             <CardMedia className={classes.media} title={post.title} />
             <div className={classes.overlay}>
                 <Typography variant={"h6"}>{post.creator}</Typography>

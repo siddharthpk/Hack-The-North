@@ -1,5 +1,6 @@
 .main {
     text-align: center;
+    margin-top: 8em;
   }
   .buttonmain {
     text-align: center;
@@ -35,6 +36,7 @@
   
   .btn-nav {
     color: #767cfe !important;
+    font-size: 1.4rem !important;
     background-color: white !important;
     margin: 0.5em 1em !important;
     font-weight: bolder !important;
@@ -50,6 +52,9 @@
 
   .MuiGrid-grid-sm-4 {
       max-width: 100% !important;
-      margin-top: 3em !important;
+      margin-top: calc(3em + 80px) !important;
   }
   
+  .posts-cont {
+    margin-top: 10em;
+  }
