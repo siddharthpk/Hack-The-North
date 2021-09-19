@@ -67,7 +67,17 @@
       max-width: 100% !important;
       margin-top: calc(3em + 80px) !important;
   }
+
   
   .posts-cont {
     margin-top: 10em;
+  }
+
+  .form-cont {
+    width: 50% !important;
+    margin: 0 auto;
+  }
+
+  .MuiPaper-rounded {
+    height: auto !important;
   }
