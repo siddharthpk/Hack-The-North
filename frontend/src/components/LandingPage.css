@@ -1,12 +1,14 @@
 .main {
     text-align: center;
 }
-
+.buttonmain {
+    text-align: center;
+}
 
 body {
     background-color: rgba(79, 70, 229, var(--tw-bg-opacity));
     vertical-align: auto;
-    padding-top: 80px;
+    padding-top: 110px;
 }
 
 button {
