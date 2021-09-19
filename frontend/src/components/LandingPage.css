@@ -47,4 +47,9 @@
       font-family: ;
       src: url();
   } */
+
+  .MuiGrid-grid-sm-4 {
+      max-width: 100% !important;
+      margin-top: 3em !important;
+  }
   
