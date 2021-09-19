@@ -26,7 +26,7 @@ const App = () => {
 
   return (
     <Container maxWidth="lg">
-      <AppBar className={classes.appBar} position="static" color="inherit">
+      <AppBar className={classes.appBar} position="fixed" color="inherit">
         <Typography className={classes.heading} variant="h2" align="center">Refugee Response</Typography>
       </AppBar>
       <Router>
