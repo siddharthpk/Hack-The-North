@@ -13,15 +13,15 @@ code {
 }
 
 .center{
-  margin-right: 100px;
-  padding-left: 150px;
+  margin-right: 10px;
+
 }
 
 .header img {
   float: left;
-  position: flex; 
-	height: 80px;
-  width: 150px; 
+  position:fixed; 
+	height: auto;
+  width: 11.25%; 
   border-radius: none;
   box-sizing: border-box;
   border-style: none;

@@ -1,15 +1,17 @@
 import { makeStyles } from '@material-ui/core/styles';
 
+
 export default makeStyles((theme) => ({
   appBar: {
     borderRadius: 15,
     display: 'flex',
     flexDirection: 'row',
-    justifyContent: 'center',
+    justifyContent: 'left',
     alignItems: 'center',
   },
+  
   heading: {
-    color: 'rgba(0,183,255, 1)',
+    color: 'rgba(118, 124, 254)',
   },
   image: {
     marginLeft: '15px',
@@ -19,5 +21,6 @@ export default makeStyles((theme) => ({
       direction: 'column-reverse'
     }
   }
+}))
 
-}));
+
