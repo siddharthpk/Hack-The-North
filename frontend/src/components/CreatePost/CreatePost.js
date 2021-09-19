@@ -4,8 +4,9 @@ import Form from '../Form/Form.js';
 import useStyles from './styles';
 
 const CreatePost = ({ currentId, setCurrentId }) => {
-
+    
     const classes = useStyles();
+
     return (
         <Container maxwidth="sm">
             <Grid className={classes.mainContainer} container justify="space-between" alignitems="stretch" spacing={3}>

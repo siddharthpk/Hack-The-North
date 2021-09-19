@@ -12,8 +12,6 @@ import ViewPost from './components/ViewPosts/ViewPost';
 import useStyles from './styles';
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
-
-
 import {
   BrowserRouter as Router,
   Route,
@@ -28,7 +26,8 @@ const theme = createMuiTheme({
       'Dosis',
       'sans-serif',
     ].join(','),
-  },});
+  },
+});
 
 const App = () => {
   const classes = useStyles();
@@ -38,10 +37,10 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <Container maxWidth="lg">
-        <AppBar className={classes.appBar} position="fixed" color="inherit">
-          <Typography className={classes.heading} variant="h2" align="center">Refugee Response</Typography>
-        </AppBar>
         <Router>
+          <AppBar className={classes.appBar} position="fixed" color="inherit">
+            <Typography className={classes.heading} variant="h2" align="center" component={Link} to="/">Refugee Response</Typography>
+          </AppBar>
           <Switch>
             <Route path="/" exact component={LandingPage} />
             <Route path="/login" exact component={Home} />
@@ -49,8 +48,8 @@ const App = () => {
             <Route path="/posts" exact component={ViewPost} />
           </Switch>
         </Router>
-      </Container>
-    </ThemeProvider>
+      </Container >
+    </ThemeProvider >
   );
 };
 
