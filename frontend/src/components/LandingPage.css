@@ -4,23 +4,31 @@
 
 
 body {
-    background-color: #9933ff;
+    background-color: rgba(79, 70, 229, var(--tw-bg-opacity));
 }
 button {
     transition: all .5s ease;
-    color: #9900cc;
+    color: rgba(224, 231, 255,);
     border: 3px solid #660066;
     font-family:'Montserrat', sans-serif;
     text-transform: none;
     text-align: center;
     line-height: 1;
     font-size: 17px;
-    background-color : #cc33ff;
+    background-color : #842ba1;
     padding: 10px;
     outline: none;
     border-radius: 4px;
+
 }
 button:hover {
     color: #001F3F;
     background-color: #9900cc;
 }
+
+
+@font-face {
+    font-family: ;
+    src: url();
+}
+

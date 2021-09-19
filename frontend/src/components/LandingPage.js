@@ -2,11 +2,15 @@ import './LandingPage.css';
 
 const LandingPage = () => {
   return (
-    <div className="main">
-      <h1>Refugee Response</h1>
-      <button className="button center" >I'm looking to help</button>
-      <button className="button center">I'm seeking help</button>
-    </div>
+    <body className="body" >
+      <div className="main">
+        <h1>Refugee Response</h1>
+      </div>
+      <div className="main">
+        <button className="button" >I'm looking to help</button>
+        <button className="button">I'm seeking help</button>
+      </div>
+    </body>
   );
 };
 

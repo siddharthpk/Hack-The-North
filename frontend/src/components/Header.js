@@ -6,7 +6,7 @@ const Header = (props) => {
     return(
         <header className="header">
             <h1>Refugee Response</h1>
-            <Button component={Link} to ="/login">Login</Button>
+            <button className="btn" component={Link} to ="/login">Login</button>
         </header>
     )
 }
