@@ -11,10 +11,10 @@ router.post('/newpost', async (req,res) =>{
         const post = await Post.create({
             creator: req.body.creator,
             title: req.body.title,
-            creator_email: req.body.creator_email,
-            mesaage: req.body.message,
+            creator_email: req.body.email,
+            message: req.body.message,
         })
-        //const token = await user.genAuthToken()
+      
         res.status(201).send(post)
     } catch (err){
         res.status(400).send(err)
