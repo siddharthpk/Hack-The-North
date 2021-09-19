@@ -16,15 +16,3 @@ code {
   margin-right: 10px;
 
 }
-
-.header img {
-  float: left;
-  position:fixed; 
-	height: auto;
-  width: 11.25%; 
-  border-radius: none;
-  box-sizing: border-box;
-  border-style: none;
-  padding: 0px;
-  outline: none;
-}
