@@ -6,7 +6,7 @@ const LandingPage = () => {
   return (
     <div>
       <div className="main">
-        <h1>Welcome, We're Glad You're Here!</h1>
+        <h1>Welcome, we're glad you're here.</h1>
       </div>
       <div className="buttonmain">
         <Button className="Button btn-nav" component={Link} to ="/createPost">I'm looking for help</Button>

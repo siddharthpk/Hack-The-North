@@ -14,6 +14,7 @@ import {
   Switch,
   Link,
 } from "react-router-dom";
+import logo from './logo.png';
 
 const theme = createMuiTheme({
   typography: {
@@ -31,8 +32,9 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <Container maxWidth="lg">
         <Router>
-          <AppBar className={`${classes.appBar} header`} position="relative" color="inherit">
-            <Typography className={classes.heading} variant="h2" align="center" component={Link} to="/">Refugee Response</Typography>
+          <AppBar className={`${classes.appBar} header`} position="fixed" color="inherit">
+            <img className="header-img" src={logo}></img>
+            <Typography className={`header-text ${classes.heading}`} variant="h2" align="center" component={Link} to="/">Refugee Response</Typography>
           </AppBar>
           <Switch>
             <Route path="/" exact component={LandingPage} />

@@ -1,5 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
 .main {
     text-align: center;
+    margin-top: 8em;
+  }
+
+  .main h1:first-child {
+    color:  #f5f5f5 !important;
+    margin-top: 4em !important;
+    font-size: 55px;
+    font-weight: bold;
+    font-family: 'Dosis', sans-serif;
+    text-transform: none;
+    letter-spacing: 2.6px;
   }
   .buttonmain {
     text-align: center;
@@ -35,8 +48,10 @@
   
   .btn-nav {
     color: #767cfe !important;
+    font-size: 1.4rem !important;
     background-color: white !important;
     margin: 0.5em 1em !important;
+    border: 2px solid #767cfe !important;
     font-weight: bolder !important;
     padding: 6px 18px !important;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px -1px,
@@ -50,6 +65,9 @@
 
   .MuiGrid-grid-sm-4 {
       max-width: 100% !important;
-      margin-top: 3em !important;
+      margin-top: calc(3em + 80px) !important;
   }
   
+  .posts-cont {
+    margin-top: 10em;
+  }
