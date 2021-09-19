@@ -1,46 +1,49 @@
 .main {
-    text-align: center;
+  text-align: center;
 }
 .buttonmain {
-    text-align: center;
+  text-align: center;
 }
 
-.body {
-    background-color: rgba(79, 70, 229, var(--tw-bg-opacity));
-    vertical-align: auto;
-    padding-top: 220px;
+body {
+  width: 100vw;
+  background: no-repeat fixed center;
+  background-color: rgba(79, 70, 229, var(--tw-bg-opacity));
+  background-image: linear-gradient(to bottom right, #7689ff, #d68eee);
+  background-color: rgba(79, 70, 229, var(--tw-bg-opacity));
+  vertical-align: auto;
 }
 
 .Button {
-    transition: all .5s ease;
-    color: rgb(15, 54, 184);
-    font-family:'Montserrat', sans-serif;
-    text-transform: none;
-    text-align: center;
-    line-height: 1;
-    font-size: 17px;
-    background-color : #767CFE;
-    padding: 20px;
-    outline: none;
-    border-radius: 12px;
-    margin-right: 10px;
+  transition: all 0.5s ease;
+  color: rgb(15, 54, 184);
+  font-family: "Montserrat", sans-serif;
+  text-transform: none;
+  text-align: center;
+  line-height: 1;
+  font-size: 17px;
+  background-color: #767cfe;
+  padding: 20px;
+  outline: none;
+  border-radius: 12px;
+  margin-right: 10px;
 }
 .Button:hover {
-    color: #001F3F;
-    background-color: #9900cc;
+  color: #001f3f;
+  background-color: #9900cc;
 }
 
 .btn-nav {
-    background-color: #767CFE !important;
-    margin: 0.5em 1em !important;
-    color: white !important;
-    font-weight: bolder !important;
-    padding: 6px 18px !important;
-    box-shadow: rgba(0, 0, 0, 0.20) 0px 2px 4px -1px, rgba(0, 0, 0, 0.14) 0px 4px 5px 0px, rgba(0, 0, 0, 0.12) 0px 1px 10px 0px;
+  color: #767cfe !important;
+  background-color: white !important;
+  margin: 0.5em 1em !important;
+  font-weight: bolder !important;
+  padding: 6px 18px !important;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px -1px,
+    rgba(0, 0, 0, 0.14) 0px 4px 5px 0px, rgba(0, 0, 0, 0.12) 0px 1px 10px 0px;
 }
 
 /* @font-face {
     font-family: ;
     src: url();
 } */
-

@@ -7,7 +7,7 @@ import CreatePost from './components/CreatePost/CreatePost';
 import ViewPost from './components/ViewPosts/ViewPost';
 import useStyles from './styles';
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
-
+import './components/Header.css';
 import {
   BrowserRouter as Router,
   Route,
@@ -31,7 +31,7 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <Container maxWidth="lg">
         <Router>
-          <AppBar className={classes.appBar} position="fixed" color="inherit">
+          <AppBar className={`${classes.appBar} header`} position="relative" color="inherit">
             <Typography className={classes.heading} variant="h2" align="center" component={Link} to="/">Refugee Response</Typography>
           </AppBar>
           <Switch>

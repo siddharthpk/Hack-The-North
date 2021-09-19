@@ -34,10 +34,12 @@ export default makeStyles({
     color: 'white',
   },
   grid: {
+    top: 200,
+    marginTop: 200,
     display: 'flex',
   },
   details: {
-    display: 'flex',
+    display: 'block',
     justifyContent: 'space-between',
     margin: '20px',
   },
