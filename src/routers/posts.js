@@ -9,11 +9,10 @@ const router = new express.Router()
 router.post('/newpost', async (req,res) =>{
     try{
         const post = await Post.create({
-            id: req.body.id,
+            creator: req.body.creator,
             title: req.body.title,
-            description: req.body.description,
-            tags: req.body.tags,
-            refugeeDatumId: req.body.refugeeId
+            creator_email: req.body.creator_email,
+            mesaage: req.body.message,
         })
         //const token = await user.genAuthToken()
         res.status(201).send(post)
@@ -25,12 +24,18 @@ router.post('/newpost', async (req,res) =>{
 
 // Read All Posts Endpoint
 router.get("/posts", async (req,res)=>{
-    const post = await Post.findAll()
-    res.json((post))
+    
+    try{
+        const post = await Post.findAll()
+        res.status(200).send(post)
+    }catch(err){
+        res.status(400).send(err)
+    }
 })
 
 // Read One Post Endpoint
 router.get("/posts/id", (req,res)=>{
 
 })
+
 module.exports = router

@@ -4,6 +4,8 @@ const cockroach = require('./src/db/cockroach')
 const refugeeRouter = require('./src/routers/refugee')
 const helperRouter = require('./src/routers/helper')
 const postsRouter = require('./src/routers/posts')
+const bodyParser = require('body-parser')
+const cors = require('cors')
 require('./src/db/cockroach') // --> DO NOT DELETE
 
 
@@ -20,6 +22,13 @@ const port = process.env.PORT || 5000
 
 // Accepting json
 app.use(express.json())
+
+app.use(cors())
+//It will parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false }))
+
+//It will parse application/json
+app.use(bodyParser.json())
 
 // Refugee Router
 app.use(refugeeRouter)
