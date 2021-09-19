@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Container, AppBar, Typography, Grow, Grid } from '@material-ui/core';
+import React from 'react';
+import { Container, Grid } from '@material-ui/core';
 import Form from '../Form/Form.js';
 import useStyles from './styles';
 
