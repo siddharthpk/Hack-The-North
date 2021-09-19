@@ -3,12 +3,13 @@ const express = require('express')
 const cockroach = require('./src/db/cockroach')
 const refugeeRouter = require('./src/routers/refugee')
 const helperRouter = require('./src/routers/helper')
+const postsRouter = require('./src/routers/posts')
 require('./src/db/cockroach') // --> DO NOT DELETE
 
 
 // Starting express server
 const app = express()
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 5000
 
 // Express Middleware for token authentication step
 // app.use((req, res, next)=>{
@@ -25,26 +26,12 @@ app.use(refugeeRouter)
 
 app.use(helperRouter)
 
+app.use(postsRouter)
+
 // Landing page for API
 app.get("/", (req, res) => {
     res.json({ message: "Welcome to our HTN application." });
   });
-
-// Create Posts Endpoint
-app.post("/newpost", (req,res)=>{
-
-})
-
-// Read All Posts Endpoint
-app.get("/posts",(req,res)=>{
-
-})
-
-// Read One Post Endpoint
-app.get("/posts/id", (req,res)=>{
-
-})
-
 
 // Start server listening
 app.listen(port, ()=>{
