@@ -6,6 +6,9 @@
 }
 
 .body {
+    background: no-repeat fixed;
+    background-color: rgba(79, 70, 229, var(--tw-bg-opacity));
+    background-image: linear-gradient(to bottom right, #7689FF, #D68EEE);
     background-color: rgba(79, 70, 229, var(--tw-bg-opacity));
     vertical-align: auto;
     padding-top: 220px;
@@ -18,7 +21,7 @@
     text-transform: none;
     text-align: center;
     line-height: 1;
-    font-size: 17px;
+    font-size: 25px;
     background-color : #767CFE;
     padding: 20px;
     outline: none;
@@ -36,6 +39,7 @@
     color: white !important;
     font-weight: bolder !important;
     padding: 6px 18px !important;
+    font-size: 45px !important;
     box-shadow: rgba(0, 0, 0, 0.20) 0px 2px 4px -1px, rgba(0, 0, 0, 0.14) 0px 4px 5px 0px, rgba(0, 0, 0, 0.12) 0px 1px 10px 0px;
 }
 
