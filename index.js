@@ -1,10 +1,10 @@
 //Importing all files and modules
 const express = require('express')
-// const userRouter = require('./router/user')
-// const taskRouter = require('./router/task')
+const cockroach = require('./src/db/cockroach')
+const refugeeRouter = require('./src/routers/refugee')
+const helperRouter = require('./src/routers/helper')
 require('./src/db/cockroach') // --> DO NOT DELETE
 
-const Refugee = require('./src/models/refugee')
 
 // Starting express server
 const app = express()
@@ -20,33 +20,15 @@ const port = process.env.PORT || 3000
 // Accepting json
 app.use(express.json())
 
-// // User Router
-// app.use(userRouter)
+// Refugee Router
+app.use(refugeeRouter)
+
+app.use(helperRouter)
 
 // Landing page for API
 app.get("/", (req, res) => {
     res.json({ message: "Welcome to our HTN application." });
   });
-
-// Refugee Sign up Endpoint
-app.post("/refugeesignup", (req,res)=>{
-
-})
-
-// Refugee Read Endpoint
-app.get("/refugees", (req,res)=>{
-
-})
-
-// Helper Sign up Endpoint
-app.post("/helpersignup", (req,res)=>{
-
-})
-
-// Helper Read Endpoint
-app.get("/helpers", (req,res)=>{
-
-})
 
 // Create Posts Endpoint
 app.post("/newpost", (req,res)=>{
