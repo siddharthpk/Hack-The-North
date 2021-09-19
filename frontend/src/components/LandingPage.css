@@ -5,15 +5,15 @@
     text-align: center;
 }
 
-body {
+.body {
     background-color: rgba(79, 70, 229, var(--tw-bg-opacity));
     vertical-align: auto;
-    padding-top: 110px;
+    padding-top: 220px;
 }
 
-button {
+.Button {
     transition: all .5s ease;
-    color: rgba(224, 231, 255,);
+    color: rgb(15, 54, 184);
     font-family:'Montserrat', sans-serif;
     text-transform: none;
     text-align: center;
@@ -25,14 +25,22 @@ button {
     border-radius: 12px;
     margin-right: 10px;
 }
-button:hover {
+.Button:hover {
     color: #001F3F;
     background-color: #9900cc;
 }
 
+.btn-nav {
+    background-color: #767CFE !important;
+    margin: 0.5em 1em !important;
+    color: white !important;
+    font-weight: bolder !important;
+    padding: 6px 18px !important;
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 2px 4px -1px, rgba(0, 0, 0, 0.14) 0px 4px 5px 0px, rgba(0, 0, 0, 0.12) 0px 1px 10px 0px;
+}
 
-@font-face {
+/* @font-face {
     font-family: ;
     src: url();
-}
+} */
 
