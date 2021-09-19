@@ -5,7 +5,6 @@ import "./App.css";
 
 const Login = () => {
     
-    
 }
 
 export default Login;

@@ -7,8 +7,10 @@ import Home from './components/Home.js';
 import Posts from './components/Posts/Posts';
 import CreatePost from './components/CreatePost/CreatePost';
 import Form from './components/Form/Form.js';
-import {useDispatch} from 'react-redux';
+import { useDispatch } from 'react-redux';
 import ViewPost from './components/ViewPosts/ViewPost';
+import useStyles from './styles';
+
 import {
   BrowserRouter as Router,
   Route,
@@ -18,13 +20,16 @@ import {
 } from "react-router-dom";
 
 const App = () => {
+  const classes = useStyles();
   const dispatch = useDispatch();
   const [currentId, setCurrentId] = useState(null);
 
   return (
     <Container maxWidth="lg">
+      <AppBar className={classes.appBar} position="static" color="inherit">
+        <Typography className={classes.heading} variant="h2" align="center">Refugee Response</Typography>
+      </AppBar>
       <Router>
-        <Header />
         <nav>
           <ul>
             <li><Link to="/">Home</Link></li>
