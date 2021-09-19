@@ -8,9 +8,9 @@ const LandingPage = () => {
       <div className="main">
         <h1>Welcome, We're Glad You're Here!</h1>
       </div>
-      <div className="main">
-        <Button className="button" component={Link} to ="/createPost">I'm looking for help</Button>
-        <Button className="button" component={Link} to ="/posts">I'm looking to help</Button>
+      <div className="buttonmain">
+        <Button size='large' variant="outlined" component={Link} to ="/createPost">I'm looking for help</Button>
+        <Button size='large' variant="outlined" component={Link} to ="/posts">I'm looking to help</Button>
       </div>
     </body>
   );
