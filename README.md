@@ -14,6 +14,8 @@ Refugee response is a web app that anyone can access for FREE. A Refugee can get
 ## How we built it
 Refugee Response has a frontend built using **React-Redux** and styled with **Material UI** library. The backend runs on a **NodeJs** Server with a **Cockroach Cloud Cluster** connected via **Sequelize**. We deployed the frontend on **Netlify** and the backend on **Heroku**.
 
+Post Hackathon, the backend was also deployed to **Azure Cloud**.
+
 ## Challenges we ran into
 We ran into issues while creating the posts form along with creating a working API that can connect to our backend, as well as fetch and upload data. Other backend errors were switching our DB from MongoDB (used for testing) to CockroachDB's server and performing cert checks while deploying the backend. Some front-end challenges were creating and styling using the Material Ui library. Deployment on Azure was creating issues for us with the GitHub authorization and due to time constraints, we had to go with Heroku.
 
