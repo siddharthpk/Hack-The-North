@@ -7,7 +7,7 @@
 **ReactJS**, **Redux**, **MaterialUI**, **CSS**, **Netlify**
 ### Backend
 
-**NodeJS**, **Express**, **Postman**, **Azure**, **Heroku**
+**NodeJS**, **Express**, **CockroachDB**, **ORM**, **CORS** **Postman**, **Azure**, **Heroku**
 
 ## Inspiration
 Refugee Response was inspired by the current events taking place in Afghanistan, with many new Refugees, as a team coming from immigrant families we understand how difficult it can be to come to a new country and learn the language and its culture. We created a platform that Refugees can turn to and rely on to have their questions answered. Things such as,
